@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding-top: 5%;
+  background: linear-gradient(
+      180deg,
+      #2e2e2e 0%,
+      #050505 99.99%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    #161616;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40%;
+}
+
+.logo {
+  width: 220px;
+  height: 120px;
+  background: no-repeat center url(./assets/scotty_logo.png);
+  background-size: contain;
+}
+
+.slogan {
+  width: 530px;
+  height: 100px;
+  background: no-repeat center url(./assets/scotty_slogan.png);
+  background-size: contain;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 25%;
+  color: #f6faf2;
+  font-weight: bold;
+}
+
+h2,
+h3 {
+  font-size: 28px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+main p {
+  font-size: 38px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.02em;
+}
+
+footer {
+  height: 35%;
+  text-align: center;
+}
+
+footer p {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #c8cecf;
+  transform: translateX(-50%);
+  letter-spacing: 0.02em;
+}
+
+.device__mobile {
+  display: none;
+}
+
+@media screen and (min-width: 1px) and (max-width: 424px) {
+  header {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .logo {
+    width: 55%;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .slogan {
+    width: 75%;
+    height: 45px;
+  }
+
+  main div {
+    order: 2;
+  }
+
+  main p {
+    order: 1;
+    font-size: 25px;
+  }
+
+  h2,
+  h3 {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  main,
+  footer {
+    height: 30%;
+  }
+
+  footer p {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .device__desktop {
+    display: none;
+  }
+
+  .device__mobile {
+    display: block;
+  }
+}

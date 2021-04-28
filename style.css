@@ -48,7 +48,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 25%;
+  height: 30%;
   color: #f6faf2;
   font-weight: bold;
 }
@@ -67,21 +67,6 @@ h2 {
 main p {
   font-size: 38px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  letter-spacing: 0.02em;
-}
-
-footer {
-  height: 35%;
-  text-align: center;
-}
-
-footer p {
-  position: fixed;
-  bottom: 0;
-  margin-bottom: 30px;
-  font-size: 18px;
-  color: #c8cecf;
-  transform: translateX(-50%);
   letter-spacing: 0.02em;
 }
 
@@ -126,14 +111,8 @@ footer p {
     line-height: 1.8;
   }
 
-  main,
-  footer {
+  main {
     height: 30%;
-  }
-
-  footer p {
-    font-size: 12px;
-    width: 100%;
   }
 
   .device__desktop {
@@ -182,14 +161,8 @@ footer p {
     line-height: 1.8;
   }
 
-  main,
-  footer {
+  main {
     height: 30%;
-  }
-
-  footer p {
-    font-size: 10px;
-    width: 100%;
   }
 
   .device__desktop {

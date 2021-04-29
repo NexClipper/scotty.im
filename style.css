@@ -24,7 +24,7 @@ body {
     ),
     #161616;
   width: 200%;
-  height: 65%;
+  height: 60%;
   border-radius: 50%;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -35,7 +35,7 @@ header {
   flex-direction: column;
   align-items: center;
   height: 50%;
-  padding-top: 2%;
+  padding-top: 1.5%;
 }
 
 .logo {
@@ -74,7 +74,7 @@ h2 {
 }
 
 main p {
-  font-size: 38px;
+  font-size: 45px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   letter-spacing: 0.02em;
 }
@@ -83,9 +83,9 @@ main p {
   display: none;
 }
 
-.image {
+.architecture {
   position: fixed;
-  bottom: 25px;
+  bottom: 5%;
   width: 60%;
   height: 30%;
   background: no-repeat center url(./assets/scotty_img.png);
@@ -108,7 +108,8 @@ main p {
     overflow: hidden;
   }
 
-  .image {
+  .architecture {
+    bottom: 3%;
     width: 95%;
     height: 30%;
     background: no-repeat center url(./assets/scotty_img.png);
@@ -176,7 +177,8 @@ main p {
     overflow: hidden;
   }
 
-  .image {
+  .architecture {
+    bottom: 3%;
     width: 95%;
     height: 30%;
     background: no-repeat center url(./assets/scotty_img.png);

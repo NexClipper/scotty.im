@@ -12,7 +12,10 @@ body {
   align-items: center;
   width: 100%;
   height: 100vh;
-  padding-top: 5%;
+  overflow: hidden;
+}
+
+.background {
   background: linear-gradient(
       180deg,
       #2e2e2e 0%,
@@ -20,13 +23,19 @@ body {
       rgba(0, 0, 0, 0) 100%
     ),
     #161616;
+  width: 200%;
+  height: 60%;
+  border-radius: 50%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 40%;
+  height: 50%;
+  padding-top: 1.5%;
 }
 
 .logo {
@@ -48,7 +57,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 30%;
+  height: 40%;
   color: #f6faf2;
   font-weight: bold;
 }
@@ -65,7 +74,7 @@ h2 {
 }
 
 main p {
-  font-size: 38px;
+  font-size: 45px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   letter-spacing: 0.02em;
 }
@@ -74,7 +83,40 @@ main p {
   display: none;
 }
 
+.architecture {
+  position: fixed;
+  bottom: 5%;
+  width: 60%;
+  height: 30%;
+  background: no-repeat center url(./assets/scotty_img.png);
+  background-size: contain;
+  transform: translateX(-1%);
+}
+
 @media screen and (min-width: 321px) and (max-width: 424px) {
+  .background {
+    background: linear-gradient(
+        180deg,
+        #2e2e2e 0%,
+        #050505 99.99%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      #161616;
+    width: 100%;
+    height: 65%;
+    border-radius: 0;
+    overflow: hidden;
+  }
+
+  .architecture {
+    bottom: 3%;
+    width: 95%;
+    height: 30%;
+    background: no-repeat center url(./assets/scotty_img.png);
+    background-size: contain;
+    transform: translateX(-1%);
+  }
+
   header {
     justify-content: center;
     width: 100%;
@@ -111,10 +153,6 @@ main p {
     line-height: 1.8;
   }
 
-  main {
-    height: 30%;
-  }
-
   .device__desktop {
     display: none;
   }
@@ -125,6 +163,29 @@ main p {
 }
 
 @media screen and (min-width: 1px) and (max-width: 320px) {
+  .background {
+    background: linear-gradient(
+        180deg,
+        #2e2e2e 0%,
+        #050505 99.99%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      #161616;
+    width: 100%;
+    height: 65%;
+    border-radius: 0;
+    overflow: hidden;
+  }
+
+  .architecture {
+    bottom: 3%;
+    width: 95%;
+    height: 30%;
+    background: no-repeat center url(./assets/scotty_img.png);
+    background-size: contain;
+    transform: translateX(-1%);
+  }
+
   header {
     justify-content: center;
     width: 100%;
@@ -148,7 +209,6 @@ main p {
   main p {
     order: 1;
     font-size: 25px;
-    margin-bottom: 30px;
   }
 
   h2,
@@ -159,10 +219,6 @@ main p {
 
   h3 {
     line-height: 1.8;
-  }
-
-  main {
-    height: 30%;
   }
 
   .device__desktop {
